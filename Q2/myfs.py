@@ -49,7 +49,9 @@ class MyFS:
             backend=default_backend()
         )
         key = base64.urlsafe_b64encode(kdf.derive(password.encode()))
-        return key, salt
+        # bytes arent json serializable, so we have to convert them to string for storage
+        # when using them in Fernet, use base64.b64decode(key) to convert back to bytes
+        return base64.b64encode(key).decode('utf-8'), base64.b64encode(salt).decode('utf-8')
 
     def _verify_computer(self):
         """Verify if current computer matches the one that created the file system"""
@@ -68,6 +70,7 @@ class MyFS:
 
         # Generate metadata
         metadata = MyFSMetadata()
+        print(json.dumps(metadata.__dict__))
         key, salt = self._generate_encryption_key(system_password)
         metadata.system_password = {
             'salt': salt,
@@ -75,7 +78,7 @@ class MyFS:
         }
 
         # Encrypt and save metadata
-        fernet = Fernet(key)
+        fernet = Fernet(base64.b64decode(key))
         encrypted_metadata = fernet.encrypt(json.dumps(metadata.__dict__).encode())
         
         with open(self.volume_y_path, 'wb') as f:
