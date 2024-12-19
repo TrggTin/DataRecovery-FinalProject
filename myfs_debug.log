@@ -1,0 +1,26 @@
+2024-12-19 22:14:45,441 - INFO - Created temporary directory at C:\Users\Admin\AppData\Local\Temp\tmpablemetw
+2024-12-19 22:14:45,441 - ERROR - Main test sequence failed: name 'ImprovedMyFS' is not defined
+2024-12-19 22:14:45,441 - INFO - Test sequence completed
+2024-12-19 22:15:04,491 - INFO - Created temporary directory at C:\Users\Admin\AppData\Local\Temp\tmpwjs_00yy
+2024-12-19 22:15:04,491 - ERROR - Main test sequence failed: name 'MyFS' is not defined
+2024-12-19 22:15:04,491 - INFO - Test sequence completed
+2024-12-19 22:17:03,405 - INFO - Created temporary directory at C:\Users\Admin\AppData\Local\Temp\tmpyp0qi1xf
+2024-12-19 22:17:03,406 - ERROR - Main test sequence failed: name 'MyFS' is not defined
+2024-12-19 22:17:03,406 - INFO - Test sequence completed
+2024-12-19 22:17:03,406 - WARNING - MyFS instance was not properly initialized
+2024-12-19 22:18:31,485 - INFO - Created temporary directory at C:\Users\Admin\AppData\Local\Temp\tmpmmvwk_iz
+2024-12-19 22:18:31,485 - INFO - Initialized MyFS instance
+2024-12-19 22:18:31,683 - ERROR - Main test sequence failed: Object of type bytes is not JSON serializable
+2024-12-19 22:18:31,683 - INFO - Test sequence completed
+2024-12-19 22:18:31,683 - INFO - Final system statistics:
+2024-12-19 22:18:31,685 - INFO - Total files: 0
+2024-12-19 22:18:31,685 - INFO - System version: 2.0
+2024-12-19 22:18:31,685 - INFO - Creation time: 1734621511.6765924
+2024-12-19 22:21:37,887 - INFO - Created temporary directory at C:\Users\Admin\AppData\Local\Temp\tmp6wsi9sgm
+2024-12-19 22:21:37,889 - INFO - Initialized MyFS instance
+2024-12-19 22:21:38,081 - ERROR - Main test sequence failed: Object of type bytes is not JSON serializable
+2024-12-19 22:21:38,081 - INFO - Test sequence completed
+2024-12-19 22:21:38,081 - INFO - Final system statistics:
+2024-12-19 22:21:38,081 - INFO - Total files: 0
+2024-12-19 22:21:38,081 - INFO - System version: 2.0
+2024-12-19 22:21:38,081 - INFO - Creation time: 1734621698.081631
